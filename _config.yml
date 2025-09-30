@@ -1,0 +1,40 @@
+title: "KMDocs - Documentation"
+description: "Team documentation and work notes"
+baseurl: ""
+url: "https://username.github.io"
+theme: jekyll-theme-cayman
+
+header_pages:
+  - index.md
+  - docs/README.md
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-default-layout
+
+relative_links:
+  enabled: true
+  collections: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "docs"
+      type: "pages" 
+    values:
+      layout: "default"
+
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+navigation:
+  - title: "Home"
+    url: /
+  - title: "Documentation" 
+    url: /docs/
