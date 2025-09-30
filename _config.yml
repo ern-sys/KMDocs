@@ -1,20 +1,14 @@
-title: "KMDocs - Documentation"
+title: "KMDocs"
 description: "Team documentation and work notes"
-baseurl: ""
-url: "https://username.github.io"
-theme: jekyll-theme-cayman
+baseurl: "/KMDocs"
+url: "https://yourusername.github.io"
+theme: null  # We're using custom CSS
 
-header_pages:
-  - index.md
-  - docs/README.md
+markdown: kramdown
+highlighter: rouge
 
-plugins:
-  - jekyll-relative-links
-  - jekyll-default-layout
-
-relative_links:
-  enabled: true
-  collections: true
+sass:
+  sass_dir: assets/css
 
 defaults:
   - scope:
@@ -24,7 +18,7 @@ defaults:
       layout: "default"
   - scope:
       path: "docs"
-      type: "pages" 
+      type: "pages"
     values:
       layout: "default"
 
@@ -33,8 +27,15 @@ collections:
     output: true
     permalink: /docs/:path/
 
-navigation:
-  - title: "Home"
-    url: /
-  - title: "Documentation" 
-    url: /docs/
+plugins:
+  - jekyll-relative-links
+  - jekyll-sitemap
+
+relative_links:
+  enabled: true
+  collections: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
