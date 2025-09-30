@@ -1,14 +1,16 @@
 title: "KMDocs"
 description: "Team documentation and work notes"
+baseurl: ""  # KOSONGIN kalau repo namanya username.github.io
+url: "https://ern-sys.github.io"
+
+# KALAU repo namanya KMDocs, pake ini:
 baseurl: "/KMDocs"
-url: "https://yourusername.github.io"
-theme: null  # We're using custom CSS
+url: "https://ern-sys.github.io"
 
 markdown: kramdown
 highlighter: rouge
 
-sass:
-  sass_dir: assets/css
+permalink: pretty
 
 defaults:
   - scope:
@@ -22,20 +24,15 @@ defaults:
     values:
       layout: "default"
 
-collections:
-  docs:
-    output: true
-    permalink: /docs/:path/
+# PASTIKAN include assets
+include:
+  - _layouts
+  - _includes
+  - assets
 
-plugins:
-  - jekyll-relative-links
-  - jekyll-sitemap
-
-relative_links:
-  enabled: true
-  collections: true
-
+# Explicit exclude yang gak perlu
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - vendor
