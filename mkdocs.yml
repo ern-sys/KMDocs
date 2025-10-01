@@ -9,6 +9,14 @@ nav:
   - Cabling: cabling.md
   - Network: network.md
   - Server: proxmox.md
+  - Virtualization: virtualization.md
+  - Storage: storage.md
+  - Backup: backup.md
+  - Monitoring: monitoring.md
+  - Security: security.md
+  - Troubleshooting: troubleshooting.md
+  - FAQ: faq.md
+  - About: about.md
 
 theme:
   name: material
