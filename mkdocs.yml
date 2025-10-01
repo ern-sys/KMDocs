@@ -5,18 +5,16 @@ repo_name: ern-sys/KMDocs
 edit_uri: edit/main/docs/
 
 nav:
+nav:
   - Home: index.md
   - Cabling: cabling.md
   - Network: network.md
-  - Server: proxmox.md
-  - Virtualization: virtualization.md
-  - Storage: storage.md
-  - Backup: backup.md
   - Monitoring: monitoring.md
   - Security: security.md
-  - Troubleshooting: troubleshooting.md
-  - FAQ: faq.md
-  - About: about.md
+  - Problem Solving:
+      - Firewall: firewall.md
+      - DNS Issues: dns.md
+
 
 theme:
   name: material
