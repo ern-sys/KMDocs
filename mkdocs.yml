@@ -1,0 +1,18 @@
+site_name: "KMDocs"
+site_description: "Knowledge Management Docs - KMDocs"
+repo_url: https://github.com/ern-sys/KMDocs
+repo_name: ern-sys/KMDocs
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Cabling: cabling.md
+  - Network: network.md
+  - Server: proxmox.md
+
+theme:
+  name: material
+  language: 'id'
+
+plugins:
+  - search
