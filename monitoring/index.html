@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#integrasi-prometheus-ke-grafana" class="md-skip">
+          Lewati ke isi
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -376,6 +381,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Monitoring
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -387,6 +405,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#integrasi-prometheus-ke-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrasi Prometheus ke Grafana
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporter-yang-umum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporter yang Umum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-lapangan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips Lapangan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-kerja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hasil Kerja
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -406,6 +477,75 @@
   
   <span class="md-ellipsis">
     Reverse Proxy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vlan-bandwitdh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bandwidth VLAN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Firewall and DNS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-port-reverse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Port Forwarding & Reverse Proxy
     
   </span>
   
@@ -543,6 +683,29 @@
   
   <span class="md-ellipsis">
     Backup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../freeradius/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FreeRadius
     
   </span>
   
@@ -874,6 +1037,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#integrasi-prometheus-ke-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrasi Prometheus ke Grafana
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporter-yang-umum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporter yang Umum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-lapangan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips Lapangan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-kerja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hasil Kerja
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -893,7 +1100,92 @@
 
   <h1>Monitoring</h1>
 
+<pre><code class="language-markdown"># Monitoring dengan Prometheus &amp; Grafana
 
+## Overview
+Prometheus adalah time-series database yang digunakan untuk mengumpulkan metric (CPU, RAM, traffic, dll).  
+Grafana adalah visualization tools yang menampilkan metric dalam bentuk dashboard interaktif.  
+Kombinasi ini powerful buat monitoring modern di server, network, dan aplikasi.
+
+---
+
+## Instalasi Prometheus
+1. Buat VM/Server (Ubuntu 22.04).
+2. Download Prometheus:
+</code></pre>
+<p>useradd --no-create-home --shell /bin/false prometheus
+mkdir /etc/prometheus /var/lib/prometheus</p>
+<p>wget <a href="https://github.com/prometheus/prometheus/releases/download/v2.45.0/prometheus-2.45.0.linux-amd64.tar.gz">https://github.com/prometheus/prometheus/releases/download/v2.45.0/prometheus-2.45.0.linux-amd64.tar.gz</a>
+tar xvf prometheus-2.45.0.linux-amd64.tar.gz
+cd prometheus-2.45.0.linux-amd64</p>
+<pre><code>3. Pindahkan binary:
+</code></pre>
+<p>cp prometheus promtool /usr/local/bin/
+cp -r consoles console_libraries /etc/prometheus
+cp prometheus.yml /etc/prometheus/</p>
+<pre><code>4. Buat service:
+</code></pre>
+<p>nano /etc/systemd/system/prometheus.service</p>
+<pre><code>Isi:
+</code></pre>
+<p>[Unit]
+Description=Prometheus
+After=network-online.target</p>
+<p>[Service]
+User=prometheus
+ExecStart=/usr/local/bin/prometheus 
+--config.file=/etc/prometheus/prometheus.yml 
+--storage.tsdb.path=/var/lib/prometheus</p>
+<p>[Install]
+WantedBy=multi-user.target</p>
+<pre><code>5. Start service:
+</code></pre>
+<p>systemctl daemon-reload
+systemctl enable prometheus
+systemctl start prometheus</p>
+<pre><code>6. Akses: `http://IP-SERVER:9090`
+
+---
+
+## Instalasi Grafana
+1. Tambahkan repo Grafana:
+</code></pre>
+<p>wget -q -O - <a href="https://packages.grafana.com/gpg.key">https://packages.grafana.com/gpg.key</a> | apt-key add -
+add-apt-repository "deb <a href="https://packages.grafana.com/oss/deb">https://packages.grafana.com/oss/deb</a> stable main"
+apt update
+apt install grafana -y</p>
+<pre><code>2. Start service:
+</code></pre>
+<p>systemctl enable grafana-server
+systemctl start grafana-server</p>
+<p><code>``
+3. Akses Grafana:</code>http://IP-SERVER:3000<code>(user/pass default:</code>admin/admin`).</p>
+<hr />
+<h2 id="integrasi-prometheus-ke-grafana">Integrasi Prometheus ke Grafana</h2>
+<ol>
+<li>Login ke Grafana → <strong>Connections → Data Sources → Add Data Source</strong>.</li>
+<li>Pilih <strong>Prometheus</strong>.</li>
+<li>Masukkan URL: <code>http://localhost:9090</code>.</li>
+<li>Save &amp; Test.</li>
+</ol>
+<hr />
+<h2 id="exporter-yang-umum">Exporter yang Umum</h2>
+<ul>
+<li><strong>Node Exporter</strong> → monitoring CPU, RAM, Disk, Network server.</li>
+<li><strong>Blackbox Exporter</strong> → monitoring ping/HTTP dari service eksternal.</li>
+<li><strong>SNMP Exporter</strong> → monitoring switch, router, AP (via SNMP).</li>
+<li><strong>MikroTik Exporter</strong> → khusus buat RouterOS metrics.</li>
+</ul>
+<hr />
+<h2 id="tips-lapangan">Tips Lapangan</h2>
+<ul>
+<li>Buat dashboard berbeda untuk <strong>server</strong>, <strong>network device</strong>, dan <strong>applications</strong>.</li>
+<li>Gunakan alerting (Telegram, Email, Slack) supaya langsung tau ada masalah.</li>
+<li>Rutin backup konfigurasi Grafana (dashboard JSON).</li>
+</ul>
+<h2 id="hasil-kerja">Hasil Kerja</h2>
+<p>Anda bisa melihat semua hasil kerja di website yang sudah dibangun.
+<a href="https://monitoring.kaldyta.com">Monitoring Kaldyta at Nusa Putra University</a></p>
 
 
 

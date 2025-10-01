@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="../vlan-bandwitdh/">
+      
+      
+        <link rel="next" href="../open-port-reverse/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Dns - KMDocs</title>
+        <title>Firewall and DNS - KMDocs</title>
       
     
     
@@ -59,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#kasus-umum" class="md-skip">
+          Lewati ke isi
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -91,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dns
+              Firewall and DNS
             
           </span>
         </div>
@@ -230,18 +239,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -257,7 +268,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Networking
@@ -402,6 +413,131 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vlan-bandwitdh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bandwidth VLAN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Firewall and DNS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Firewall and DNS
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kasus-umum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kasus Umum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-lapangan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips Lapangan
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-port-reverse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Port Forwarding & Reverse Proxy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -529,6 +665,29 @@
   
   <span class="md-ellipsis">
     Backup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../freeradius/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FreeRadius
     
   </span>
   
@@ -860,6 +1019,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kasus-umum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kasus Umum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-lapangan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips Lapangan
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -877,9 +1062,98 @@
   
 
 
-  <h1>Dns</h1>
+  <h1>Firewall and DNS</h1>
 
+<pre><code class="language-markdown"># Troubleshooting DNS &amp; Firewall Issues
 
+## Overview
+Masalah DNS dan firewall sering muncul di jaringan kampus maupun server.  
+Gejala umumnya:
+- Website tidak bisa diakses (padahal internet normal).
+- IP bisa di-ping, tapi domain tidak resolve.
+- Port tertentu tertutup meski service sudah jalan.
+- Akses remote ke server/router ditolak.
+
+---
+
+## DNS Troubleshooting
+### 1. Cek Resolusi DNS
+</code></pre>
+<p>ping google.com
+nslookup google.com
+dig google.com</p>
+<pre><code>- Jika `ping 8.8.8.8` berhasil tapi `ping google.com` gagal → masalah ada di DNS resolver.
+
+### 2. Ganti Resolver
+Edit `/etc/resolv.conf`:
+</code></pre>
+<p>nameserver 8.8.8.8
+nameserver 1.1.1.1</p>
+<pre><code>
+### 3. Cek di MikroTik
+</code></pre>
+<p>/ip dns print
+/ip dns set servers=8.8.8.8,1.1.1.1 allow-remote-requests=yes</p>
+<pre><code>
+---
+
+## Firewall Troubleshooting
+### 1. Cek Rules di MikroTik
+</code></pre>
+<p>/ip firewall filter print</p>
+<pre><code>- Pastikan tidak ada rule yang **drop** semua koneksi sebelum rule allow.
+
+### 2. Port Knocking
+- Teknik keamanan dengan &quot;membuka port&quot; hanya jika ada urutan port tertentu yang diakses.  
+- Masalah umum: user lupa urutannya → port remote (SSH/Winbox) tertutup.
+
+Contoh rule knocking:
+</code></pre>
+<p>/ip firewall filter
+add chain=input protocol=tcp dst-port=7000 action=add-src-to-address-list 
+address-list=knock-knock address-list-timeout=30s
+add chain=input protocol=tcp dst-port=8000 src-address-list=knock-knock 
+action=add-src-to-address-list address-list=knock-open address-list-timeout=1m
+add chain=input protocol=tcp dst-port=22 src-address-list=knock-open action=accept</p>
+<pre><code>
+### 3. Tes Port Terbuka
+Dari client:
+</code></pre>
+<p>nc -zv IP-SERVER 22
+telnet IP-SERVER 80</p>
+<p>````</p>
+<hr />
+<h2 id="kasus-umum">Kasus Umum</h2>
+<ol>
+<li><strong>DNS gagal resolve di server lokal</strong></li>
+<li>Restart DNS service:
+     <code>systemctl restart systemd-resolved</code></li>
+<li>
+<p>Atau ganti resolver ke Google/Cloudflare.</p>
+</li>
+<li>
+<p><strong>Service jalan, tapi gak bisa diakses dari luar</strong></p>
+</li>
+<li>Cek binding service (<code>netstat -tulpn</code>).</li>
+<li>Pastikan firewall allow port service.</li>
+<li>
+<p>Jika di cloud → cek security group (AWS/GCP).</p>
+</li>
+<li>
+<p><strong>Website 404 di Reverse Proxy</strong></p>
+</li>
+<li>Cek konfigurasi <code>nginx/apache</code>.</li>
+<li>Pastikan hostname/domain sesuai.</li>
+<li>Cek log:
+     <code>tail -f /var/log/nginx/error.log</code></li>
+</ol>
+<hr />
+<h2 id="tips-lapangan">Tips Lapangan</h2>
+<ul>
+<li>Dokumentasikan setiap firewall rule → biar gampang tracing.  </li>
+<li>Jangan lupa whitelist IP engineer agar gak ngunci diri sendiri.  </li>
+<li>Gunakan monitoring (Grafana/Prometheus Blackbox) untuk deteksi port/service down.  </li>
+</ul>
 
 
 

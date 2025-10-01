@@ -11,20 +11,22 @@
       
       
       
+        <link rel="prev" href="../reverse-proxy/">
       
-        <link rel="next" href="cabling/">
+      
+        <link rel="next" href="../dns/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
-        <title>KMDocs</title>
+        <title>Bandwidth VLAN - KMDocs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
       
       
 
@@ -43,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,11 +63,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#selamat-datang-di-dokumentasi-kerja-enggar-irawan" class="md-skip">
-          Lewati ke isi
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -78,7 +75,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="KMDocs" class="md-header__button md-logo" aria-label="KMDocs" data-md-component="logo">
+    <a href=".." title="KMDocs" class="md-header__button md-logo" aria-label="KMDocs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Bandwidth VLAN
             
           </span>
         </div>
@@ -188,7 +185,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigasi" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="KMDocs" class="md-nav__button md-logo" aria-label="KMDocs" data-md-component="logo">
+    <a href=".." title="KMDocs" class="md-nav__button md-logo" aria-label="KMDocs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -215,19 +212,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -238,7 +226,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -247,18 +234,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -274,7 +263,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Networking
@@ -288,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="networking/overview.md" class="md-nav__link">
+      <a href="../networking/overview.md" class="md-nav__link">
         
   
   
@@ -311,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="networking/configuration.md" class="md-nav__link">
+      <a href="../networking/configuration.md" class="md-nav__link">
         
   
   
@@ -334,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="networking/troubleshooting.md" class="md-nav__link">
+      <a href="../networking/troubleshooting.md" class="md-nav__link">
         
   
   
@@ -357,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cabling/" class="md-nav__link">
+      <a href="../cabling/" class="md-nav__link">
         
   
   
@@ -380,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="monitoring/" class="md-nav__link">
+      <a href="../monitoring/" class="md-nav__link">
         
   
   
@@ -403,7 +392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reverse-proxy/" class="md-nav__link">
+      <a href="../reverse-proxy/" class="md-nav__link">
         
   
   
@@ -423,10 +412,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="vlan-bandwitdh/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -437,6 +433,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -449,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dns/" class="md-nav__link">
+      <a href="../dns/" class="md-nav__link">
         
   
   
@@ -472,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="open-port-reverse/" class="md-nav__link">
+      <a href="../open-port-reverse/" class="md-nav__link">
         
   
   
@@ -540,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="proxmox.md" class="md-nav__link">
+      <a href="../proxmox.md" class="md-nav__link">
         
   
   
@@ -563,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="docker.md" class="md-nav__link">
+      <a href="../docker.md" class="md-nav__link">
         
   
   
@@ -586,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="virtualization.md" class="md-nav__link">
+      <a href="../virtualization.md" class="md-nav__link">
         
   
   
@@ -609,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="backup.md" class="md-nav__link">
+      <a href="../backup.md" class="md-nav__link">
         
   
   
@@ -632,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="freeradius/" class="md-nav__link">
+      <a href="../freeradius/" class="md-nav__link">
         
   
   
@@ -700,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git.md" class="md-nav__link">
+      <a href="../git.md" class="md-nav__link">
         
   
   
@@ -723,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cicd.md" class="md-nav__link">
+      <a href="../cicd.md" class="md-nav__link">
         
   
   
@@ -746,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="automation.md" class="md-nav__link">
+      <a href="../automation.md" class="md-nav__link">
         
   
   
@@ -814,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="troubleshooting.md" class="md-nav__link">
+      <a href="../troubleshooting.md" class="md-nav__link">
         
   
   
@@ -882,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="security/overview.md" class="md-nav__link">
+      <a href="../security/overview.md" class="md-nav__link">
         
   
   
@@ -905,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="security/best-practices.md" class="md-nav__link">
+      <a href="../security/best-practices.md" class="md-nav__link">
         
   
   
@@ -928,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="security/tools.md" class="md-nav__link">
+      <a href="../security/tools.md" class="md-nav__link">
         
   
   
@@ -968,8 +965,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -988,21 +983,66 @@
   
 
 
-<h1 id="selamat-datang-di-dokumentasi-kerja-enggar-irawan">Selamat Datang di Dokumentasi Kerja Enggar Irawan</h1>
-<p>Halo, selamat datang di <strong>portal dokumentasi kerja saya</strong> 👋.<br />
-Website ini saya buat untuk menghimpun, merapikan, dan membagikan seluruh pekerjaan serta eksperimen saya di bidang <strong>jaringan komputer, sistem, dan IT infrastructure</strong>.  </p>
-<p>Semua isi di sini berangkat dari pengalaman nyata:<br />
-- Setup dan konfigurasi perangkat jaringan (MikroTik, Cisco, Fortinet, Ruijie)<br />
-- Eksperimen di server (Proxmox, FreeRADIUS, reverse proxy, monitoring tools)<br />
-- Dokumentasi troubleshooting sehari-hari di kampus<br />
-- Catatan pribadi seputar teknologi, literatur, hingga mindfulness  </p>
-<p>Tujuan saya sederhana:<br />
-👉 Supaya setiap konfigurasi, percobaan, dan solusi gak hilang ditelan lupa.<br />
-👉 Supaya orang lain juga bisa belajar dari pengalaman yang sama.  </p>
-<hr />
-<blockquote>
-<p>“Dokumentasi bukan hanya catatan teknis, tapi juga jejak perjalanan seorang engineer.”  </p>
-</blockquote>
+  <h1>Bandwidth VLAN</h1>
+
+<pre><code class="language-markdown"># VLAN &amp; Bandwidth Management di MikroTik
+
+## Overview
+Virtual LAN (VLAN) digunakan untuk memisahkan jaringan logis dalam satu perangkat fisik.  
+Bandwidth management digunakan untuk mengontrol alokasi kecepatan internet agar lebih adil dan stabil.
+
+## Studi Kasus
+- VLAN 11 untuk Staff (prioritas tinggi, bandwidth stabil).
+- VLAN 20 untuk Mahasiswa (bandwidth dibatasi).
+- VLAN 30 untuk Guest (akses terbatas).
+
+## Konfigurasi VLAN di MikroTik
+1. Buat VLAN interface
+</code></pre>
+<p>/interface vlan add name=vlan11 vlan-id=11 interface=ether2
+/interface vlan add name=vlan20 vlan-id=20 interface=ether2
+/interface vlan add name=vlan30 vlan-id=30 interface=ether2</p>
+<pre><code>
+2. Berikan IP pada tiap VLAN
+</code></pre>
+<p>/ip address add address=192.168.11.1/24 interface=vlan11
+/ip address add address=192.168.20.1/24 interface=vlan20
+/ip address add address=192.168.30.1/24 interface=vlan30</p>
+<pre><code>
+3. Tambahkan DHCP Server (opsional)
+</code></pre>
+<p>/ip dhcp-server add name=dhcp11 interface=vlan11 lease-time=8h address-pool=pool11
+/ip dhcp-server add name=dhcp20 interface=vlan20 lease-time=8h address-pool=pool20
+/ip dhcp-server add name=dhcp30 interface=vlan30 lease-time=4h address-pool=pool30</p>
+<pre><code>
+---
+
+## Bandwidth Management
+Gunakan **Simple Queue** untuk memisahkan kecepatan internet per VLAN.
+
+### Limitasi Per VLAN
+</code></pre>
+<p>/queue simple
+add name="Staff" target=vlan11 max-limit=20M/20M
+add name="Mahasiswa" target=vlan20 max-limit=10M/10M
+add name="Guest" target=vlan30 max-limit=2M/2M</p>
+<pre><code>
+### Limitasi Per-User (di VLAN tertentu)
+Contoh limitasi untuk mahasiswa:
+</code></pre>
+<p>/queue simple
+add name="Student-Limit" target=192.168.20.0/24 max-limit=2M/2M</p>
+<pre><code>
+---
+
+## Tips Lapangan
+- Gunakan **Queue Tree** jika ingin lebih detail (QoS, prioritasi aplikasi).  
+- Jangan lupa tes dengan `ping` dan `speedtest` setelah konfigurasi.  
+- Dokumentasikan setiap perubahan rule, agar mudah troubleshooting.  
+
+---
+✅ Dengan VLAN &amp; bandwidth management, jaringan lebih tertata, adil, dan stabil.
+</code></pre>
 
 
 
@@ -1051,10 +1091,10 @@ Website ini saya buat untuk menghimpun, merapikan, dan membagikan seluruh pekerj
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
